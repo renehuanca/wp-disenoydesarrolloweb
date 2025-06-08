@@ -1,0 +1,25 @@
+# Ignore all files
+*
+
+# Except the plugins directory
+!plugins/
+!plugins/articles/
+!plugins/articles/**
+!plugins/contents/
+!plugins/contents/**
+!plugins/customers/
+!plugins/customers/**
+!plugins/features/
+!plugins/features/**
+!plugins/projects/
+!plugins/projects/**
+!plugins/services/
+!plugins/services/**
+
+# Except the theme directory
+!themes/
+!themes/openfs/
+!themes/openfs/**
+
+# Except the .gitignore file
+!.gitignore

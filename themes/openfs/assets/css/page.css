@@ -1,0 +1,172 @@
+/*-------------------------------------------------*/
+/* Pages
+/*-------------------------------------------------*/
+
+.hero-page {
+  background-color: #132046;
+  background-image: url(../img/bg-services.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.hero-page__title {
+  margin: 120px auto;
+}
+
+.hero-page__description {
+  max-width: 700px;
+}
+
+@media (min-width: 991.98px) {
+  .hero-page__title {
+    margin: 160px auto;
+  }
+  .hero-page > div {
+    padding-left: 100px;
+  }
+}
+
+/*-------------------------------------------------*/
+/* Diseño y Desarrollo Web
+/*-------------------------------------------------*/
+
+.parallax-section {
+  background-image: url(../img/bg-services.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.radial-gradient {
+  background: radial-gradient(transparent 10%, white);
+}
+
+.card-img-wrapper {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.card-img-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*-------------------------------------------------*/
+/* Galeria
+/*-------------------------------------------------*/
+
+.gallery {
+  column-count: 1;
+  column-gap: 0;
+  width: 100%;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__overlay {
+  opacity: 0;
+  visibility: hidden;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    133deg,
+    rgb(4, 44, 99, 0.8) 43%,
+    rgb(77, 96, 122, 0.8) 72%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.gallery__item:hover .gallery__overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.gallery__image {
+  width: 100%;
+  margin: 0;
+  display: block;
+  break-inside: avoid;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+/*-------------------------------------------------*/
+/* CERTIFICADOS SSL
+/*-------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .certificados-ssl__description {
+    max-width: 1200px;
+  }
+}
+
+.certificados-ssl__https-image {
+  animation: rotate 5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*-------------------------------------------------*/
+/* APLICACION WEB PROGRESIVA
+/*-------------------------------------------------*/
+
+.font-black {
+  font-weight: 900;
+}
+
+/*-------------------------------------------------*/
+/* CONTACT
+/*-------------------------------------------------*/
+
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(10, 16, 36, 0.5);
+  z-index: 1;
+}
+
