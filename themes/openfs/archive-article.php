@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <!-- HERO SECTION -->
 <section class="hero-page position-relative overflow-hidden text-white">
     <div data-aos="fade-up" data-aos-duration="800" class="hero-page__title position-relative z-1 container">
@@ -17,10 +16,8 @@
 </section>
                 
 <section class="container my-5">
-<?php
-if (have_posts()):
-    while (have_posts()): the_post(); ?>
-
+<?php if (have_posts()): ?>
+    <?php while (have_posts()): the_post(); ?>
         <article class="card">
             <img height="200px" src="<?php echo esc_url(get_field('image')['url']); ?>" class="card-img-top object-fit-cover" alt="<?php the_title(); ?>">
                 <div class="card-body">
@@ -33,8 +30,8 @@ if (have_posts()):
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Leer Mas</a>
                 </div>
         </article>
-    <?php endwhile;
-else: ?>
+    <?php endwhile; ?>
+<?php else: ?>
     <p>No se encontraron artículos.</p>
 <?php endif; ?>
 </section>

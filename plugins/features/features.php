@@ -37,7 +37,7 @@ function register_feature_custom_post_type(): void
         'labels'             => $labels,
         'public'             => true,
         'menu_position'      => 4,
-        'menu_icon'          => 'dashicons-format-aside',
+        'menu_icon'          => 'dashicons-button',
         'supports'           => ['title'],
         'has_archive'        => true,
         'rewrite'            => ['slug' => 'caracteristica'],

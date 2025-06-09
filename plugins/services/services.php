@@ -36,7 +36,7 @@ function register_service_custom_post_type(): void
     $args = [
         'labels'        => $labels,
         'public'        => true,
-        'menu_position' => 3,
+        'menu_position' => 1,
         'menu_icon'     => 'dashicons-lightbulb',
         'supports'      => ['title', 'thumbnail'],
         'has_archive'   => true,
@@ -96,7 +96,7 @@ function register_service_fields(): void
                     'label'         => 'Características que tiene',
                     'name'          => 'related_features',
                     'type'          => 'relationship',
-                    'post_type'     => ['feature'],
+                    'post_type'     => ['feature', 'content'],
                     'filters'       => ['search', 'post_type'],
                     'return_format' => 'object',
                     'instructions'  => 'Selecciona las características que tiene el servicio (se mostrarán en cards)',
