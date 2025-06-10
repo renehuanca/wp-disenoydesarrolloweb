@@ -41,6 +41,15 @@ function create_pages() {
 		];
         wp_insert_post($pagina);
     } 
+	if (!get_page_by_path('contactos')) {
+        $pagina = [
+            'post_title'    => 'Contactos',
+            'post_name'     => 'Contactos',
+            'post_status'   => 'publish',
+            'post_type'     => 'page',
+		];
+        wp_insert_post($pagina);
+    } 
 	
 	flush_rewrite_rules(); 
 }

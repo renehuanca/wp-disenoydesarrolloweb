@@ -23,8 +23,8 @@ if (have_posts()):
 
         <article>
 
-            <img height="200px" src="<?php echo esc_url(get_field('image')['url']); ?>" class="card-img-top object-fit-cover" alt="<?php the_title(); ?>">
-            <h1 class="text-primary"><?php the_title(); ?></h1>
+            <img height="200px" src="<?php echo esc_url(get_field('image')['url']); ?>" class="card-img-top object-fit-cover rounded" alt="<?php the_title(); ?>">
+            <h1 class="text-primary my-4"><?php the_title(); ?></h1>
 
             <?php if (has_post_thumbnail()): ?>
                 <div class="post-thumbnail">

@@ -25,18 +25,19 @@
                 <path d="M4 6h16" />
             </svg>
             <!-- DESKTOP MENU -->
+            <?php
+                $services = new WP_Query([
+                    'post_type' => 'service',
+                    'posts_per_page' => -1,
+                    'orderby' => 'menu_order',
+                    'order' => 'ASC',
+                ]);
+            ?> 
             <nav id="menu-lg" class="position-relative">
                 <ul class="list-unstyled d-flex justify-content-between m-0 p-4 fw-semibold">
                     <li class="position-relative grupo-servicios">
                         <a href="#" class="px-3 text-white text-decoration-none d-block py-2">SERVICIOS</a>
-                        <?php
-                            $services = new WP_Query([
-                                'post_type' => 'service',
-                                'posts_per_page' => -1,
-                                'orderby' => 'menu_order',
-                                'order' => 'ASC',
-                            ]);
-                        ?> 
+                        
                         <ul class="submenu-lg list-unstyled position-absolute bg-white text-black mt-0 py-2 px-3 shadow rounded">
                             <?php if ($services->have_posts()): ?>
                                     <?php while($services->have_posts()): $services->the_post(); ?>
@@ -53,7 +54,7 @@
                     </li>
                     <li><a href="<?php echo site_url('/articulos'); ?>" class="px-3 text-white text-decoration-none d-block py-2">BLOG</a></li>
                     <li><a href="<?php echo site_url('/portfolio'); ?>" class="px-3 text-white text-decoration-none d-block py-2">PORTAFOLIO</a></li>
-                    <li><a href="contactos.html" class="px-3 text-white text-decoration-none d-block py-2">CONTACTOS</a>
+                    <li><a href="<?php echo site_url('/contactos'); ?>" class="px-3 text-white text-decoration-none d-block py-2">CONTACTOS</a>
                     </li>
                 </ul>
             </nav>
@@ -85,30 +86,23 @@
                             </svg>
                         </button>
                         <ul class="submenu list-unstyled ps-4 pe-4" id="submenu-servicios">
-                            <li><a href="diseno-y-desarrollo-web.html"
-                                    class="text-black text-decoration-none d-block py-2">Diseño y Desarrollo Web</a>
-                            </li>
-                            <li><a href="tiendas-virtuales.html"
-                                    class="text-black text-decoration-none d-block py-2">Tiendas Virtuales</a></li>
-                            <li><a href="hospedaje-web.html"
-                                    class="text-black text-decoration-none d-block py-2">Hospedaje Web</a></li>
-                            <li><a href="certificados-ssl.html"
-                                    class="text-black text-decoration-none d-block py-2">Certificados SSL</a></li>
-                            <li><a href="landing-page.html" class="text-black text-decoration-none d-block py-2">Landing
-                                    Page</a></li>
-                            <li><a href="servicio-tecnico.html"
-                                    class="text-black text-decoration-none d-block py-2">Servicio Técnico</a></li>
-                            <li><a href="aplicacion-web-progresiva.html"
-                                    class="text-black text-decoration-none d-block py-2">Aplicación Web Progresiva</a>
-                            </li>
+                            <?php if ($services->have_posts()): ?>
+                                <?php while($services->have_posts()): $services->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink(); ?>" class="text-black text-decoration-none d-block py-2" style="font-size: 14px"><?php the_title() ?></a>
+                                </li>
+                                <?php endwhile; ?>
+                            <?php else: ?>
+                                    No hay servicios
+                            <?php endif; ?>
                         </ul>
                     </li>
-                    <li><a href="about.html" class="fw-bold text-black text-decoration-none d-block p-3">SOBRE
+                    <li><a href="<?php echo site_url('/about'); ?>" class="fw-bold text-black text-decoration-none d-block p-3">SOBRE
                             OPENFS</a></li>
-                    <li><a href="blog.html" class="fw-bold text-black text-decoration-none d-block p-3">BLOG</a></li>
-                    <li><a href="portfolio.html"
+                    <li><a href="<?php echo site_url('/articulos'); ?>" class="fw-bold text-black text-decoration-none d-block p-3">BLOG</a></li>
+                    <li><a href="<?php echo site_url('/portfolio'); ?>"
                             class="fw-bold text-black text-decoration-none d-block p-3">PORTAFOLIO</a></li>
-                    <li><a href="contactos.html"
+                    <li><a href="<?php echo site_url('/contactos'); ?>"
                             class="fw-bold text-black text-decoration-none d-block p-3">CONTACTOS</a></li>
                 </ul>
             </nav>

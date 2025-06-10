@@ -16,15 +16,20 @@
         </section>
 
         <!-- GALLERY SECTION -->
+        <?php 
+        $paged = max(1, get_query_var('paged'));
+
+        $services = new WP_Query([
+                'post_type' => 'project',
+                'posts_per_page' => 8,
+                'orderby' => 'menu_order',
+                'order' => 'ASC',
+                'paged' => $paged,
+            ]);
+        ?>
         <section class="container mt-3">
             <div class="gallery mt-5">
-                <?php $services = new WP_Query([
-                        'post_type' => 'project',
-                        'posts_per_page' => -1,
-                        'orderby' => 'menu_order',
-                        'order' => 'ASC',
-                    ]);
-                ?>
+                
                 <?php if ($services->have_posts()): ?>
                     <?php while($services->have_posts()): $services->the_post(); ?>
                     <a href="#" class="gallery__item">
@@ -35,10 +40,42 @@
                         <img class="gallery__image" src="<?php echo esc_url(get_field('image')['url']); ?>" alt="<?php the_title(); ?>">
                     </a>
                     <?php endwhile; ?>
+
+                    
                 <?php else: ?>
                     No hay proyectos
                 <?php endif; ?>
             </div>
+
+            <!-- Pagination -->
+            <?php
+            $total_pages = $services->max_num_pages;
+            if ($total_pages > 1):
+                $current_page = max(1, get_query_var('paged'));
+
+                $pagination_links = paginate_links([
+                    'total'        => $total_pages,
+                    'current'      => $current_page,
+                    'prev_text'    => 'Anterior',
+                    'next_text'    => 'Siguiente',
+                    'type'         => 'array',
+                ]);
+            ?>
+
+                <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <?php foreach ($pagination_links as $link): ?>
+                    <li class="page-item <?php echo strpos($link, 'current') !== false ? 'active' : ''; ?>">
+                        <?php
+                        echo str_replace('page-numbers', 'page-link', $link);
+                        ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+                </nav>
+            <?php endif; ?>
+            <!-- end pagination -->
+
         </section>
 
         <?php get_template_part( 'template-parts/question')?>
