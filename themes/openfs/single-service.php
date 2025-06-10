@@ -7,7 +7,7 @@
                 <h2 id="slider-title" class="fs-1 fw-bold" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
                     <?php the_title(); ?>
                 </h2>
-                <p class="text-white fs-4 fw-bold text-uppercase">
+                <p class="text-white fs-5 fw-light text-uppercase">
                     <?php the_field('subtitle'); ?>
                 </p>
                 <p class="hero-page__description">
@@ -68,7 +68,9 @@
                     <?php foreach($contents as $content): ?>
                             <?php if (get_field('content_orientation', $content->ID) == 'vertical'): ?>
                                 <div class="text-center my-5" data-aos="fade-up">
-                                    <img height="" src="<?php echo esc_url(get_field('image', $content->ID)['url']); ?>" alt="<?php the_title(); ?>">
+                                    <?php if (get_field('image', $content->ID)): ?>
+                                        <img height="" src="<?php echo esc_url(get_field('image', $content->ID)['url']); ?>" alt="<?php the_title(); ?>">
+                                    <?php endif; ?>
                                     <h2 class="font-black" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
                                         <?php the_title(); ?>
                                     </h2>
@@ -85,7 +87,9 @@
                                         <p class="certificados-ssl__description"><?php echo esc_html(get_field('description', $content->ID)); ?></p>
                                     </div>
                                     <div class="px-md-5 w-100 text-center" data-aos="flip-up">
-                                        <img height="250px" src="<?php echo esc_url(get_field('image', $content->ID)['url']); ?>" alt="<?php the_title(); ?>">
+                                    <?php if (get_field('image', $content->ID)): ?>
+                                        <img  src="<?php echo esc_url(get_field('image', $content->ID)['url']); ?>" alt="<?php the_title(); ?>">
+                                    <?php endif; ?>
                                     </div>
                                 </div>
                             <?php endif; ?>
@@ -95,4 +99,6 @@
         <?php endif; ?>
 
     <?php endwhile; endif; ?>
+
+    <?php get_template_part( 'template-parts/question')?>
 <?php get_footer(); ?>
