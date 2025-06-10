@@ -23,6 +23,9 @@
 !plugins/services/
 !plugins/services/**
 
+!plugins/seeders/
+!plugins/seeders/**
+
 # Except the theme directory
 !themes/
 !themes/openfs/
