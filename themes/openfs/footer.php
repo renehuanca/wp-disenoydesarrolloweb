@@ -94,6 +94,25 @@
     AOS.init();
 </script>
 <script>
+    // youtube video
+
+    const modal = document.getElementById('videoModal');
+    const btnOpen = document.getElementById('openModalBtn');
+    const btnClose = document.getElementById('closeModalBtn');
+    const iframe = document.getElementById('youtubeIframe');
+
+    btnOpen.onclick = () => {
+        modal.style.display = 'flex';
+        iframe.src += "&autoplay=1";
+    };
+
+    btnClose.onclick = () => {
+        modal.style.display = 'none';
+        iframe.src = iframe.src.split("&autoplay")[0]; //restart
+    };
+
+    // swiper projects
+
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -108,6 +127,7 @@
                 spaceBetween: 10,
             },
         },
+        centeredSlides: true,
     });
 
 </script>

@@ -14,9 +14,18 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-end" data-aos="fade-left">
-                        <h2 class="display-3 fw-bold text-white">AUN NO TIENES <br>
-                            PAGINA WEB?</h2>
-                        <button class="btn btn-primary btn-lg">REPRODUCIR VIDEO</button>
+                        <h2 class="display-3 fw-bold text-white">
+                            AUN NO TIENES <br>
+                            PAGINA WEB?
+                        </h2>
+                        <button id="openModalBtn" class="btn btn-primary btn-lg">REPRODUCIR VIDEO</button>
+
+                        <div id="videoModal" class="video-modal">
+                            <div class="video-content">
+                                <iframe id="youtubeIframe" width="100%" height="500" src="https://www.youtube.com/embed/gcpvBVc6NH0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                                <button id="closeModalBtn" class="close-modal">×</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

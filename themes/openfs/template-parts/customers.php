@@ -29,7 +29,7 @@ $customers = new WP_Query([
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-lg">VEA TODO NUESTRO PORTAFOLIO</button>
+                <a href="<?php echo site_url('/portfolio'); ?>" class="btn btn-primary btn-lg">VEA TODO NUESTRO PORTAFOLIO</a>
             </div>
             <svg class="customers-bottom" fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
                 preserveAspectRatio="none">

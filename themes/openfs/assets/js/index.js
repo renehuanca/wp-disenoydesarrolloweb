@@ -41,8 +41,7 @@ toggleBtn.addEventListener('click', () => {
 });
 const header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
-
+function updateHeader() {
   if (window.scrollY > 0) {
     header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
     header.style.transition = 'all 0.3s ease-in-out';
@@ -51,42 +50,23 @@ window.addEventListener('scroll', () => {
     header.style.backgroundColor = 'transparent';
     header.style.height = '100px'
   }
-});
+}
+
+window.addEventListener('scroll', updateHeader);
+window.addEventListener('DOMContentLoaded', updateHeader);
 
 
 // hero slide
 
-const frases = [
-  {
-    lead: "DISEÑO Y",
-    title: "DESARROLLO WEB"
-  },
-  {
-    lead: "DISEÑO DE",
-    title: "TIENDAS VIRTUALES"
-  },
-  {
-    lead: "DOMINIO Y",
-    title: "HOSPEDAJE WEB"
-  }
-];
-
-let i = 0;
-const leadEl = document.getElementById("slider-lead");
-const titleEl = document.getElementById("slider-title");
+const frases = document.querySelectorAll('.frase-item');
+let current = 0;
 
 setInterval(() => {
-  leadEl.style.opacity = 0;
-  titleEl.style.opacity = 0;
-
-  setTimeout(() => {
-    i = (i + 1) % frases.length;
-    leadEl.textContent = frases[i].lead;
-    titleEl.textContent = frases[i].title;
-    leadEl.style.opacity = 1;
-    titleEl.style.opacity = 1;
-  }, 500);
+  frases[current].classList.remove('active');
+  current = (current + 1) % frases.length;
+  frases[current].classList.add('active');
 }, 4000);
+
 
 
 // services typing text effect
