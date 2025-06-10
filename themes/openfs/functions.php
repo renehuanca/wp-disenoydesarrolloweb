@@ -40,7 +40,16 @@ function create_pages() {
             'post_type'     => 'page',
 		];
         wp_insert_post($pagina);
-    } flush_rewrite_rules(); 
+    } 
+	
+	flush_rewrite_rules(); 
 }
+
 add_action('after_switch_theme', 'create_pages');
 
+function allow_svg_uploads($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+
+add_filter('upload_mimes', 'allow_svg_uploads');
