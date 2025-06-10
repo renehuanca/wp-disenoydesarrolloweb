@@ -2,7 +2,7 @@
 
 function seed_services() 
 {
-    $n = 5; // increment to seed
+    $n = 6; // increment to seed
 
     if (get_option('openfs_services_seeded_'.$n)) { 
         return;
@@ -12,7 +12,7 @@ function seed_services()
 
     $services = [
         [
-            'title'       => 'DISEÑO Y DESARROLLO WEB',
+            'title'       => 'DISEÑO Y DESARROLLO WEB holoa mundo',
             'subtitle'    => 'Sitios web únicos adaptados a tu negocio',
             'description' => 'Diseño de Páginas Webs increíbles. Desarrollo Web profesional enfocado a tus objetivos empresariales.',
             'color'       => '#4A90E2',
