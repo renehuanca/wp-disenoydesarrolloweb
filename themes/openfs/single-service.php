@@ -5,9 +5,11 @@
         <section class="hero-page position-relative overflow-hidden text-white">
             <div data-aos="fade-up" data-aos-duration="800" class="hero-page__title position-relative z-1 container">
                 <h2 id="slider-title" class="fs-1 fw-bold" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
-                    <?php the_title(); ?><br>
-                    <span class="text-white"><?php the_field('subtitle'); ?></span>
+                    <?php the_title(); ?>
                 </h2>
+                <p class="text-white fs-4 fw-bold text-uppercase">
+                    <?php the_field('subtitle'); ?>
+                </p>
                 <p class="hero-page__description">
                     <?php the_field('description'); ?>
                 </p>
