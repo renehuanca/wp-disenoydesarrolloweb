@@ -41,7 +41,7 @@
                             <?php if ($services->have_posts()): ?>
                                     <?php while($services->have_posts()): $services->the_post(); ?>
                                     <li>
-                                        <a href="<?php the_permalink(); ?>" class="d-block p-2 text-decoration-none text-black"><?php the_title() ?></a>
+                                        <a href="<?php the_permalink(); ?>" class="d-block p-2 text-decoration-none text-muted fw-normal" style="font-size: 14px;"><?php the_title() ?></a>
                                     </li>
                                     <?php endwhile; ?>
                             <?php else: ?>
