@@ -4,9 +4,27 @@ GENERAL
 
 html {
   scrollbar-width: inherit;
-  scrollbar-color: #ff781d #f0f0f0;
+  scrollbar-color: #ff781d #2b2b2b; /* thumb (naranja), track (gris claro) */
 }
 
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ff781d;
+  border-radius: 10px;
+  border: 2px solid #2b2b2b;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #e5670c;
+}
 body {
   font-family: "Exo";
   color: #4e5465 !important;
