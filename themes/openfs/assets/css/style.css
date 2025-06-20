@@ -21,6 +21,14 @@ header {
   height: 100px;
 }
 
+header .logo-openfs {
+  transition: transform 0.3s ease;
+}
+
+header .logo-openfs:hover {
+  transform: scale(1.1);
+}
+
 #menu {
   transition: all 0.3s ease-in-out;
   width: 320px;

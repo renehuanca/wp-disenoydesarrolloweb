@@ -17,7 +17,9 @@
     <!-- HEADER -->
     <header id="header" class="position-fixed w-100 z-1">
         <div class="container w-100 h-100 d-flex justify-content-between align-items-center">
-            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" height="60px" alt="Diseño y desarrollo web - logo"></a>
+            <a href="<?php echo home_url(); ?>" class="logo-openfs">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" height="60px" alt="Diseño y desarrollo web - Logo Openfs">
+            </a>
             <svg xmlns="http://www.w3.org/2000/svg" id="menu-toggle" class="text-white" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
