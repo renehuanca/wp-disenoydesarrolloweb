@@ -14,10 +14,10 @@ $customers = new WP_Query([
                 <path d="M0,6V0H1000V100Z" transform="translate(0 0)"></path>
             </svg>
             <div class="position-relative py-5">
-                <h2 class="fs-1 fw-bold text-white">NUESTROS CLIENTES <br>
+                <h2 class="fs-1 fw-bold text-white" data-aos="fade-up">NUESTROS CLIENTES <br>
                     NUESTRO PORTAFOLIO</h2>
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper"data-aos="zoom-in">
                     <div class="swiper-wrapper">
                     <?php if ($customers->have_posts()): ?>
                         <?php while($customers->have_posts()): $customers->the_post(); ?>
@@ -29,7 +29,7 @@ $customers = new WP_Query([
                     </div>
                 </div>
 
-                <a href="<?php echo site_url('/portfolio'); ?>" class="btn btn-primary btn-lg">VEA TODO NUESTRO PORTAFOLIO</a>
+                <a href="<?php echo site_url('/portfolio'); ?>" class="btn btn-primary btn-lg" data-aos="fade-up">VEA TODO NUESTRO PORTAFOLIO</a>
             </div>
             <svg class="customers-bottom" fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
                 preserveAspectRatio="none">

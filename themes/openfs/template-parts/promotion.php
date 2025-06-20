@@ -31,7 +31,7 @@
             </div>
         </section>
         <section class="promotion-bottom position-relative text-center py-3 px-3">
-            <h2 class="display-4 py-4 fw-bold">¿DESEAS PROMOCIONAR <span class="text-secondary">TU WEB?</span></h2>
+            <h2 class="display-4 py-4 fw-bold" data-aos="fade-up">¿DESEAS PROMOCIONAR <span class="text-secondary">TU WEB?</span></h2>
             <p class="text-secondary fw-bold">SOMOS MARKETING DIGITAL BOLIVIA TU AGENCIA DE MARKETING DIGITAL</p>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing-digital-logo.png" alt="Logo de Marketing Digital Bolivia">
             <p>Marketing Digital Bolivia Es un Servicio de OpenFS SRL</p>
