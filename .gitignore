@@ -26,6 +26,9 @@
 !plugins/seeders/
 !plugins/seeders/**
 
+!plugins/slider/
+!plugins/slider/**
+
 # Except the theme directory
 !themes/
 !themes/openfs/
