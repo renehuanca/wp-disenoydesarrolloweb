@@ -3,50 +3,37 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 px-3 px-md-0">
-                        <h2 class="display-4 fw-bold pb-5">DISEÑO DE <span class="text-primary">PAGINAS WEB</span>
-                            DISEÑO WEB EN BOLIVIA</h2>
+                        <h2 class="display-4 fw-bold pb-5">
+                            DISEÑO DE <span class="text-primary">PÁGINAS WEB</span> EN BOLIVIA
+                        </h2>
+
                         <p>
-                            Diseño de Páginas Web en Bolivia, contamos con un equipo altamente capacitado en diseño y
-                            desarrollo web, trabajamos para ayudarte a alcanzar tus objetivos, nuestro servicio
-                            corporativo
-                            de Diseño y Desarrollo de Páginas Web es realizado a medida sin el uso de Plantillas o
-                            Templates.
+                            En <strong>OpenFS SRL</strong>, diseñamos y desarrollamos <strong>páginas web profesionales en Bolivia</strong>, hechas completamente a medida, sin uso de plantillas. Nuestro equipo está altamente capacitado para ayudarte a alcanzar tus objetivos digitales con soluciones creativas y efectivas.
                         </p>
 
-                        <p>¿Buscas Diseño de Pagina Web?, brindamos soluciones para Instituciones, Diseño de Paginas Web
-                            para PYMES, Diseño de Paginas Web en la ciudad de La Paz, Soporte Técnico en Diseño de
-                            Paginas
-                            Web en Bolivia, buscas algo aún más personalizado, ofertamos Desarrollo de Paginas Web,
-                            elige la
-                            Plataforma Todo es Posible!!!</p>
+                        <p>
+                            Ofrecemos <strong>diseño web para empresas, instituciones y PYMES</strong> en La Paz y en todo el país. También brindamos soporte técnico, mantenimiento y <strong>desarrollo web personalizado</strong>, adaptado a tus necesidades y plataformas.
+                        </p>
 
-                        <p>Usamos gestores de contenido y nuestro framework drag and drop (Arrastrar y soltar) que
-                            simplifica el mantenimiento en el Diseño y Desarrollo de Páginas Web. Requieres que tu
-                            pesonal
-                            de continuidad con el trabajo..., te brindamos asesoramiento en y capacitación en Diseño y
-                            Desarrollo Web en todo Bolivia, asesoramiento online en La Paz, El Alto, Cochabamba, Santa
-                            Cruz,
-                            Tarija, Beni, Pando, Oruro, Potosí, Sucre.</p>
+                        <p>
+                            Usamos gestores de contenido modernos y un framework <em>drag and drop</em> (arrastrar y soltar) que facilita el mantenimiento de tu sitio. Además, capacitamos a tu equipo para que pueda continuar el trabajo de forma autónoma.
+                        </p>
 
-                        <p>Diseño de Páginas Web es un servicio y marca registrada de OpenFS SRL - Software Libre
-                            Bolivia,
-                            estamos ubicados en la ciudad de La Paz, Bolivia y brindamos asistencia y mantenimiento de
-                            páginas web a nivel nacional. Asesoramiento profesional en Diseño y Desarrollo de Páginas
-                            Web en
-                            Bolivia, contamos también con las mejores estrategias de Marketing Digital en Bolivia.</p>
+                        <p>
+                            Ofrecemos asesoramiento profesional en <strong>diseño y desarrollo web</strong> en toda Bolivia: La Paz, El Alto, Cochabamba, Santa Cruz, Tarija, Beni, Pando, Oruro, Potosí y Sucre.
+                        </p>
 
-                        <p>Una Página Web es tu empresa en Internet.
-                            OpenFS SRL</p>
+                        <p>
+                            <strong>OpenFS SRL – Software Libre Bolivia</strong> es una empresa ubicada en La Paz que brinda servicios de diseño web, mantenimiento y marketing digital a nivel nacional. Somos expertos en <strong>estrategias SEO, redacción de contenido optimizado</strong> y creación de <em>landing pages</em> para generación de clientes potenciales.
+                        </p>
 
-                        <p>Estrategias de Posicionamiento Web SEO (Search Engine Optimization), redacción de artículos
-                            orientados a SEO, generación de clientes potenciales por medio de páginas de aterrizaje
-                            (Landing
-                            Pages). Consulta sobre nuestros servicios de Diseño de Páginas Web en Bolivia.</p>
+                        <p class="fw-bold text-primary">
+                            Una página web es la imagen de tu empresa en Internet. ¡Haz que impacte!
+                        </p>
 
-                        <p>Tag:✅Diseño de Paginas Web ✅Diseño Web Bolivia ✅Desarrollo Web Bolivia ✅Desarrollo de Paginas
-                            Web
-                            ✅Landing Pages Bolivia ✅Diseño de Pagina Web Bolivia</p>
-
+                        <p class="small text-muted">
+                            Etiquetas: ✅Diseño de Páginas Web, ✅Desarrollo Web Bolivia, ✅SEO Bolivia, ✅Diseño Web La Paz, ✅Landing Pages
+                        </p>
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <div class="position-relative">
