@@ -48,4 +48,6 @@ else: ?>
 <?php endif; ?>
 </section>
 
+<?php get_template_part( 'template-parts/question')?>
+
 <?php get_footer(); ?>
