@@ -38,10 +38,10 @@ function register_article_custom_post_type(): void
         'public'             => true,
         'menu_position'      => 4,
         'menu_icon'          => 'dashicons-media-document',
-        'supports'           => ['title', 'editor', 'thumbnail'],
+        'supports'           => ['title', 'editor'],
         'has_archive'        => true,
         'rewrite'            => ['slug' => 'articulos'],
-        'show_in_rest'       => true,
+        'show_in_rest'       => false,
     ];
 
     register_post_type('article', $args);
