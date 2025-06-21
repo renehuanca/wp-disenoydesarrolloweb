@@ -104,7 +104,15 @@ function type() {
 // Esperar al cargar el DOM
 window.addEventListener("DOMContentLoaded", type);
 
+// Show or hide scroll to top button
+const scrollToTopButton = document.getElementById('scroll-to-top');
 
-
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) {
+    scrollToTopButton.classList.remove('d-none');
+  } else {
+    scrollToTopButton.classList.add('d-none');
+  }
+});
 
 
