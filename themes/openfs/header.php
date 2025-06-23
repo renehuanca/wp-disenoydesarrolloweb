@@ -32,7 +32,8 @@
                 $services = new WP_Query([
                     'post_type' => 'service',
                     'posts_per_page' => -1,
-                    'orderby' => 'menu_order',
+                    'meta_key' => 'order',
+                    'orderby' => 'meta_value_num',
                     'order' => 'ASC',
                 ]);
             ?> 
