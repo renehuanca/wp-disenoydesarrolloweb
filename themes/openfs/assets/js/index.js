@@ -44,11 +44,13 @@ const header = document.getElementById('header');
 function updateHeader() {
   if (window.scrollY > 0) {
     header.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    header.style.webkitBackdropFilter = 'blur(8px)';
     header.style.backdropFilter = 'blur(8px)';
     header.style.transition = 'all 0.3s ease-in-out';
     header.style.height = '70px'
   } else {
     header.style.backgroundColor = 'transparent';
+    header.style.webkitBackdropFilter = 'none';
     header.style.backdropFilter = 'none';
     header.style.transition = 'all 0.3s ease-in-out';
     header.style.height = '100px'
