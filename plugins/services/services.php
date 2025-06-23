@@ -80,9 +80,9 @@ function register_service_fields(): void
                     'label'         => 'Descripción',
                     'name'          => 'description',
                     'type'          => 'textarea',
-                    'instructions'  => 'Escribe una descripción del servicio. (máximo 225 caracteres).',
+                    'instructions'  => 'Escribe una descripción del servicio. (máximo 200 caracteres).',
                     'required'      => 1,
-                    'maxlength'     => 225,
+                    'maxlength'     => 200,
                 ],
                 [
                     'key'           => 'field_service_color',
