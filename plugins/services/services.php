@@ -93,6 +93,15 @@ function register_service_fields(): void
                     'required'      => 0,
                 ],
                 [
+                    'key'           => 'field_service_order',
+                    'label'         => 'Orden',
+                    'name'          => 'order',
+                    'type'          => 'number',
+                    'instructions'  => 'Indica el orden en que se debe mostrar este servicio (menor primero).',
+                    'required'      => 0,
+                    'default_value' => 0,
+                ],
+                [
                     'key'           => 'field_related_features',
                     'label'         => 'Características que tiene',
                     'name'          => 'related_features',
