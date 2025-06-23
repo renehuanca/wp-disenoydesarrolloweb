@@ -71,17 +71,17 @@
                                     <?php if (get_field('image', $content->ID)): ?>
                                         <img height="" src="<?php echo esc_url(get_field('image', $content->ID)['url']); ?>" alt="<?php the_title(); ?>">
                                     <?php endif; ?>
-                                    <h2 class="font-black" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
-                                        <?php the_title(); ?>
+                                    <h2 class="font-black mx-auto" style="max-width: 700px;color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
+                                        <?php echo get_the_title($content->ID); ?>
                                     </h2>
                                     <p class="fw-bold"><?php echo esc_html(get_field('subtitle', $content->ID)); ?></p>
                                     <p class="lead"><?php echo esc_html(get_field('description', $content->ID)); ?></p>
                                 </div>
                             <?php elseif(get_field('content_orientation', $content->ID) == 'horizontal'): ?>
-                                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
                                     <div data-aos="fade-right">
                                         <h2 class="font-black" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
-                                            <?php the_title(); ?>
+                                            <?php echo get_the_title($content->ID); ?>
                                         </h2>
                                         <p class="fw-bold"><?php echo esc_html(get_field('subtitle', $content->ID)); ?></p>
                                         <p class="certificados-ssl__description"><?php echo esc_html(get_field('description', $content->ID)); ?></p>
