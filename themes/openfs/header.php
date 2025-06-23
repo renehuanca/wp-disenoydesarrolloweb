@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hero Video Bootstrap</title>
+    <meta name="author" content="Diseño y desarrollo web - Openfs">
+    <meta name="keywords" content="diseno de paginas web, desarrollo de paginas web, desarrollo web, diseño web, la paz, bolivia, creacion de paginas web, sitio web, diseño, desarrollo, pagina web, diseño paginas web, creacion de paginas web, diseño web profesional, empresa de diseño web, programacion web, empresas de desarrollo web, diseño y desarrollo web, como crear una pagina web, aplicaciones web, programacion web, portal web, desarrollo web la paz, desarrollo web bolivia, diseño web joomla, desarrollo de sistemas web, posicionamiento de paginas web, alojamiento de paginas web, mantenimiento pagina web, diseño y desarrollo, mejores creadores de paginas web, optimizacion de paginas web, optimizacion web, desarrollo web responsive, diseño aplicaciones web">
+    <meta name="description" content="✅ Diseño de Paginas Web ✅ Diseño  Web Profesional ✅Desarrollo Web ✅ La Paz, Bolivia. ✅ Si tu objetivo es ser el primero en Google te ayudamos a lograrlo.">
+    <title>Diseño de Páginas Web - Openfs</title>
     <?php wp_head(); ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -23,5 +23,5 @@
               <?php endif; ?>
               <a href="#diseno-web" class="btn btn-primary btn-lg mt-3">SABER MÁS</a>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-bottom.svg" class="hero-bottom">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-bottom.svg" class="hero-bottom" alt="Imagen inferior para la sección de Hero - Openfs">
         </section>

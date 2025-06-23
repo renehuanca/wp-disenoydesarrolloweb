@@ -4,9 +4,9 @@
         <!-- HERO SECTION -->
         <section class="hero-page position-relative overflow-hidden text-white">
             <div data-aos="fade-up" data-aos-duration="800" class="hero-page__title position-relative z-1 container">
-                <h2 id="slider-title" class="fs-1 fw-bold" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
+                <h1 id="slider-title" class="fs-1 fw-bold" style="color: <?php the_field('color') ? the_field('color') : 'var(--brand-primary)'; ?>!important;">
                     <?php the_title(); ?>
-                </h2>
+                </h1>
                 <p class="text-white fs-5 fw-light text-uppercase">
                     <?php the_field('subtitle'); ?>
                 </p>
@@ -48,10 +48,10 @@
                                         >
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title text-dark fw-bold">
+                                        <h2 class="card-title text-dark fw-bold fs-5">
                                             <?php echo esc_html($feature->post_title); ?>
-                                        </h5>
-                                        <p>
+                                        </h2>
+                                        <p class="text-body">
                                             <?php echo esc_html($feature->description); ?>
                                         </p>
                                     </div>

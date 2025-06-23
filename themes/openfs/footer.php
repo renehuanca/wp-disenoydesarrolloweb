@@ -70,7 +70,7 @@
                 </ul>
             </div>
             <div class="col-md-4 no-blue-links">
-                <h5 class="fw-bold">ENLACES</h5>
+                <h2 class="fw-bold">ENLACES</h2>
                 <ul class="list-unstyled">
                     <li><a href="#">Diseño Web</a></li>
                     <li><a href="#">Desarrollo Web</a></li>
