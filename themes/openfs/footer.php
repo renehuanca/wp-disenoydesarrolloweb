@@ -126,7 +126,7 @@
     // swiper projects
 
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         autoplay: {

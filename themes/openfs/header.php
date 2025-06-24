@@ -67,7 +67,7 @@
             </nav>
 
             <!-- MOBILE MENU -->
-            <nav id="menu" class="menu-slide bg-white position-fixed top-0 end-0 h-100 translate-end">
+            <nav id="menu" class="menu-slide bg-white position-fixed top-0 end-0 translate-end">
                 <ul class="list-unstyled m-0 p-4">
                     <li class="d-flex justify-content-end pb-3">
                         <button id="close-menu-button" class="btn btn-primary btn-sm">
