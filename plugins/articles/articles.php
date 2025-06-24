@@ -36,7 +36,7 @@ function register_article_custom_post_type(): void
     $args = [
         'labels'             => $labels,
         'public'             => true,
-        'menu_position'      => 4,
+        'menu_position'      => 12,
         'menu_icon'          => 'dashicons-media-document',
         'supports'           => ['title', 'editor'],
         'has_archive'        => true,

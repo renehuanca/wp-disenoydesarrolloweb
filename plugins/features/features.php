@@ -36,7 +36,7 @@ function register_feature_custom_post_type(): void
     $args = [
         'labels'             => $labels,
         'public'             => true,
-        'menu_position'      => 4,
+        'menu_position'      => 8,
         'menu_icon'          => 'dashicons-button',
         'supports'           => ['title'],
         'has_archive'        => true,

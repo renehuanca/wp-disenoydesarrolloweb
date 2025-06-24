@@ -36,7 +36,7 @@ function register_customer_custom_post_type(): void
     $args = [
         'labels'             => $labels,
         'public'             => true,
-        'menu_position'      => 5,
+        'menu_position'      => 11,
         'menu_icon'          => 'dashicons-groups',
         'supports'           => ['title'],
         'has_archive'        => true,

@@ -36,7 +36,7 @@ function register_slide_custom_post_type(): void
     $args = [
         'labels'        => $labels,
         'public'        => true,
-        'menu_position' => 3,
+        'menu_position' => 1,
         'menu_icon'     => 'dashicons-image-flip-horizontal',
         'supports'      => ['title'],
         'has_archive'   => false,

@@ -36,7 +36,7 @@ function register_service_custom_post_type(): void
     $args = [
         'labels'        => $labels,
         'public'        => true,
-        'menu_position' => 1,
+        'menu_position' => 6,
         'menu_icon'     => 'dashicons-lightbulb',
         'supports'      => ['title', 'thumbnail'],
         'has_archive'   => true,
