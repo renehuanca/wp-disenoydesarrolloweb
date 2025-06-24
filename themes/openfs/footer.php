@@ -139,7 +139,7 @@
                 spaceBetween: 10,
             },
             1200: {
-                slidesPerView: 6,
+                slidesPerView: 5,
                 spaceBetween: 10,
             }
         },

@@ -17,7 +17,7 @@ $customers = new WP_Query([
                 <h2 class="fs-1 fw-bold text-white" data-aos="fade-up">NUESTROS CLIENTES <br>
                     NUESTRO PORTAFOLIO</h2>
                 <!-- Swiper -->
-                <div class="swiper mySwiper"data-aos="zoom-in">
+                <div class="swiper mySwiper container mx-auto"data-aos="zoom-in">
                     <div class="swiper-wrapper">
                     <?php if ($customers->have_posts()): ?>
                         <?php while($customers->have_posts()): $customers->the_post(); ?>
