@@ -15,13 +15,13 @@
 * Domain Path:       /languages
 */
 
-require_once plugin_dir_path(__FILE__) . 'includes/functions.php';
+//require_once plugin_dir_path(__FILE__) . 'includes/functions.php';
 
 // Load your seeders here
 
-require_once plugin_dir_path(__FILE__) . 'includes/seed-features.php';
-require_once plugin_dir_path(__FILE__) . 'includes/seed-services.php';
-require_once plugin_dir_path(__FILE__) . 'includes/seed-contents.php';
+// require_once plugin_dir_path(__FILE__) . 'includes/seed-features.php';
+// require_once plugin_dir_path(__FILE__) . 'includes/seed-services.php';
+// require_once plugin_dir_path(__FILE__) . 'includes/seed-contents.php';
 
 
 
