@@ -26,7 +26,7 @@ $services = new WP_Query([
                                         src="<?php echo esc_url(get_field('image')['url']); ?>"
                                         alt="<?php the_title(); ?>">
                                     <div>
-                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                        <h3 class="fs-5 card-title"><?php the_title(); ?></h3>
                                         <p><?php echo esc_html(get_field('description')); ?></p>
                                     </div>
                                 </div>
