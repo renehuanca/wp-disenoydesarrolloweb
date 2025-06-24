@@ -22,7 +22,7 @@ $customers = new WP_Query([
                     <?php if ($customers->have_posts()): ?>
                         <?php while($customers->have_posts()): $customers->the_post(); ?>
                         <div class="swiper-slide">
-                            <img src="<?php echo esc_url(get_field('image')['url']); ?>" alt="<?php the_title(); ?>" height="60px">
+                            <img src="<?php echo esc_url(get_field('image')['url']); ?>" alt="<?php the_title(); ?>" height="60px" loading="lazy">
                         </div>
                         <?php endwhile; ?>
                     <?php endif; ?>

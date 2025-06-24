@@ -37,9 +37,9 @@
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <div class="position-relative">
-                            <img class="position-absolute images" src="<?php echo get_template_directory_uri(); ?>/assets/img/diseño-de-paginas-web-bolivia-2.png"
+                            <img loading="lazy" class="position-absolute images" src="<?php echo get_template_directory_uri(); ?>/assets/img/diseño-de-paginas-web-bolivia-2.png"
                                 alt="Segundo ejemplo de nuestros diseños de páginas web" data-aos="fade-up">
-                            <img class="position-relative images" style="padding-top: 250px;"
+                            <img loading="lazy" class="position-relative images" style="padding-top: 250px;"
                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/diseño-de-paginas-web-bolivia.png"
                                 alt="Ejemplo de nuestros diseños de páginas web" data-aos="fade-down">
                         </div>
