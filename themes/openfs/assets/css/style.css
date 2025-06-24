@@ -591,7 +591,6 @@ FOOTER SECTION
 /*-------------------------------------------------*/
 /* CONTACT
 /*-------------------------------------------------*/
-
 .contact::before {
   content: "";
   position: absolute;
@@ -601,5 +600,16 @@ FOOTER SECTION
   top: 0;
   background: rgba(10, 16, 36, 0.5);
   z-index: 1;
+}
+
+.contact__form {
+  padding-top:  120px;
+  padding-bottom: 64px;
+}
+
+.contact__form .card {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2.5rem;
 }
 

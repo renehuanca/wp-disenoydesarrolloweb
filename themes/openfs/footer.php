@@ -4,11 +4,12 @@
 <footer class=" footer pb-2 pt-5">
     <div class="container px-3 px-md-0 ">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/openfs-neutral-logo.png" alt="Open FS Logo">
                 <p class="py-2">Diseño y Desarrollo De Paginas Web</p>
                 <ul class="list-unstyled" style="font-size: .75rem;">
-                    <li><svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="24" height="24"
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-house-icon lucide-house">
@@ -16,8 +17,7 @@
                             <path
                                 d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                         </svg>
-                        Calle Gregorio Reynolds 665
-                        Entre Presbitero Medina y Luis Uría de la Oliva Zona Sopocachi.
+                        Calle Gregorio Reynolds #665, Zona Sopocachi.
                     </li>
                     <li><svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -55,30 +55,37 @@
                     </li>
                 </ul>
             </div>
+
             <div class="col-md-4 no-blue-links">
+                <p class="fw-bold">NUESTROS SERVICIOS</p></ul>
                 <ul class="list-unstyled">
-                    <li><a href="#">Diseño y Desarrollo Web</a></li>
-                    <li><a href="#">Tiendas Virtuales</a></li>
-                    <li><a href="#">Certificados SSLb</a></li>
-                    <li><a href="#">Landing Page</a></li>
-                    <li><a href="#">Servicio Tecnico</a></li>
-                    <li><a href="#">Aplicacion Web Progresiva</a></li>
-                    <li><a href="#">Sobre OpenFs</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Contactos</a></li>
+                <?php
+                    $services = new WP_Query([
+                        'post_type' => 'service',
+                        'posts_per_page' => 5,
+                        'meta_key' => 'order',
+                        'orderby' => 'meta_value_num',
+                        'order' => 'ASC',
+                    ]);
+                ?> 
+                <?php if ($services->have_posts()): ?>
+                    <?php while($services->have_posts()): $services->the_post(); ?>
+                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                    <?php endwhile; ?>
                 </ul>
+                <?php else: ?>
+                    No hay servicios
+                <?php endif; ?>
             </div>
-            <div class="col-md-4 no-blue-links">
-                <h2 class="fw-bold">ENLACES</h2>
+
+            <div class="col-md-3 no-blue-links">
+                <p class="fw-bold">ENLACES</p>
                 <ul class="list-unstyled">
-                    <li><a href="#">Diseño Web</a></li>
-                    <li><a href="#">Desarrollo Web</a></li>
-                    <li><a href="#">Alojamiento Web</a></li>
-                    <li><a href="#">SSL</a></li>
-                    <li><a href="#">Página de Aterrizaje</a></li>
-                    <li><a href="#">Gestion de contenidos</a></li>
-                    <li><a href="#">Wordpress</a></li>
+                    <li><a href="<?php echo site_url('/'); ?>">Inicio</a></li>
+                    <li><a href="<?php echo site_url('/about'); ?>">Sobre Nosotros</a></li>
+                    <li><a href="<?php echo site_url('/articulos'); ?>">Nuestro Blog</a></li>
+                    <li><a href="<?php echo site_url('/portfolio'); ?>">Portafolio</a></li>
+                    <li><a href="<?php echo site_url('/contactos'); ?>">Contactos</a></li>
                 </ul>
             </div>
         </div>
