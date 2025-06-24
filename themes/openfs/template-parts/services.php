@@ -21,7 +21,8 @@ $services = new WP_Query([
                         <div class="col-md-6 mb-4">
                             <article class="card p-2 border-0 shadow" data-aos="fade-up">
                                 <div class="card-body d-flex flex-md-column flex-lg-row gap-4">
-                                    <img height="100px"
+                                    <img height="100px" 
+                                        class="object-fit-contain"
                                         src="<?php echo esc_url(get_field('image')['url']); ?>"
                                         alt="<?php the_title(); ?>">
                                     <div>

@@ -6,7 +6,7 @@
                     NUESTRO PORTAFOLIO
                 </h2>
                 <p class="hero-page__description">
-                    Nuestros clientes
+                    Diseños que conectan, impactan y destacan en el mundo digital.
                 </p>
             </div>
             <svg fill="#FFF" class="services-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 91"
@@ -21,7 +21,7 @@
 
         $services = new WP_Query([
                 'post_type' => 'project',
-                'posts_per_page' => 8,
+                'posts_per_page' => 12,
                 'orderby' => 'menu_order',
                 'order' => 'ASC',
                 'paged' => $paged,
@@ -58,11 +58,11 @@
                     'current'      => $current_page,
                     'prev_text'    => 'Anterior',
                     'next_text'    => 'Siguiente',
-                    'type'         => 'array',
+                    'type'         => 'array', 
                 ]);
             ?>
 
-                <nav aria-label="Page navigation">
+                <nav aria-label="Page navigation" class="my-5">
                 <ul class="pagination justify-content-center">
                     <?php foreach ($pagination_links as $link): ?>
                     <li class="page-item <?php echo strpos($link, 'current') !== false ? 'active' : ''; ?>">

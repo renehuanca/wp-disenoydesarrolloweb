@@ -119,7 +119,7 @@
     // swiper projects
 
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 30,
         loop: true,
         autoplay: {
@@ -131,6 +131,10 @@
                 slidesPerView: 4,
                 spaceBetween: 10,
             },
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 10,
+            }
         },
         centeredSlides: true,
     });
