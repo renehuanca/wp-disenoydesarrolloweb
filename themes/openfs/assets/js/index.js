@@ -73,7 +73,6 @@ setInterval(() => {
 }, 4000);
 
 
-
 // services typing text effect
 const phrases = ["DISEÑO", "DESARROLLO"];
 const el = document.querySelector(".writing-text");

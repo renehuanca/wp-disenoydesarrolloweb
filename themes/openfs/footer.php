@@ -7,7 +7,7 @@
             <div class="col-md-5">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/openfs-neutral-logo.png" alt="Open FS Logo">
                 <p class="py-2">Diseño y Desarrollo De Paginas Web</p>
-                <ul class="list-unstyled" style="font-size: .75rem;">
+                <ul class="list-unstyled d-flex flex-column justify-content-between gap-2" style="font-size: .75rem;">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -58,7 +58,7 @@
 
             <div class="col-md-4 no-blue-links">
                 <p class="fw-bold">NUESTROS SERVICIOS</p></ul>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled d-flex flex-column justify-content-between gap-2">
                 <?php
                     $services = new WP_Query([
                         'post_type' => 'service',
@@ -70,7 +70,16 @@
                 ?> 
                 <?php if ($services->have_posts()): ?>
                     <?php while($services->have_posts()): $services->the_post(); ?>
-                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <li>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php
+                                $titulo = get_the_title();
+                                $titulo = mb_strtolower($titulo, 'UTF-8');
+                                $titulo = mb_strtoupper(mb_substr($titulo, 0, 1), 'UTF-8') . mb_substr($titulo, 1);
+                                echo $titulo;
+                                ?>
+                            </a>
+                        </li>
                     <?php endwhile; ?>
                 </ul>
                 <?php else: ?>
@@ -80,7 +89,7 @@
 
             <div class="col-md-3 no-blue-links">
                 <p class="fw-bold">ENLACES</p>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled d-flex flex-column justify-content-between gap-2">
                     <li><a href="<?php echo site_url('/'); ?>">Inicio</a></li>
                     <li><a href="<?php echo site_url('/about'); ?>">Sobre Nosotros</a></li>
                     <li><a href="<?php echo site_url('/articulos'); ?>">Nuestro Blog</a></li>

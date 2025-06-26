@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-6 position-relative d-none d-lg-block">
                         <div class="phone-wrapper-animation">
-                            <img height="700px" class="promotion-phone" src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.png"
+                            <img class="promotion-phone" src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.png"
                                 alt="Telefono con una muestra de nuestro trabajo">
                         </div>
                     </div>

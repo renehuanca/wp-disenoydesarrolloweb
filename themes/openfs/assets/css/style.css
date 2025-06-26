@@ -197,6 +197,29 @@ HERO SECTION
   width: 100%;
 }
 
+.slider-hero {
+  position: relative;
+  height: 300px; /* ajusta según tu diseño */
+  overflow: hidden;
+}
+
+.frase-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.frase-item.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+
+
 /*-------------------------------------
 SERVICES SECTION
 ----------------------------------------*/
@@ -562,6 +585,13 @@ FOOTER SECTION
 }
 
 /*-------------------------------------------------*/
+/* Blog
+/*-------------------------------------------------*/
+.post-content h2 ¨{
+  color: red!important;
+}
+
+/*-------------------------------------------------*/
 /* PORTAFOLIO
 /*-------------------------------------------------*/
 .pagination {
@@ -589,9 +619,11 @@ FOOTER SECTION
     padding-left: 0;
     list-style: none;
 }
+
 /*-------------------------------------------------*/
 /* CONTACT
 /*-------------------------------------------------*/
+
 .contact::before {
   content: "";
   position: absolute;
