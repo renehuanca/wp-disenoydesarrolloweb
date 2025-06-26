@@ -18,7 +18,7 @@
 <section class="container my-5">
 <?php if (have_posts()): ?>
     <?php while (have_posts()): the_post(); ?>
-        <article class="card">
+        <article class="card mb-4">
             <img height="200px" src="<?php echo esc_url(get_field('image')['url']); ?>" class="card-img-top object-fit-cover" alt="<?php the_title(); ?>">
                 <div class="card-body">
                     <h2 class="card-title text-primary fw-bold">
