@@ -19,8 +19,8 @@ $services = new WP_Query([
                 <?php if ($services->have_posts()): ?>
                     <?php while($services->have_posts()): $services->the_post(); ?>
                         <div class="col-md-6 mb-4">
-                            <article class="card p-2 border-0 shadow" data-aos="fade-up">
-                                <div class="card-body d-flex flex-md-column flex-lg-row gap-4">
+                            <article class="card p-2 border-0 shadow h-100" data-aos="fade-up">
+                                <div class="card-body d-flex flex-column text-center text-lg-start flex-lg-row gap-4">
                                     <img height="100px" 
                                         class="object-fit-contain"
                                         src="<?php echo esc_url(get_field('image')['url']); ?>"

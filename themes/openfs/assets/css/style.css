@@ -197,12 +197,6 @@ HERO SECTION
   width: 100%;
 }
 
-.slider-hero {
-  position: relative;
-  height: 300px; /* ajusta según tu diseño */
-  overflow: hidden;
-}
-
 .frase-item {
   position: absolute;
   top: 0;
