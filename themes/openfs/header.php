@@ -84,12 +84,14 @@
                             class="fw-bold text-black text-decoration-none d-block p-3 border-0 bg-transparent w-100 text-start d-flex justify-content-between align-items-center"
                             id="toggle-servicios">
                             SERVICIOS
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg id="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="M8 12h8" />
                                 <path d="M12 8v8" />
+                            </svg>
+                            <svg id="minus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-minus-icon lucide-circle-minus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/>
                             </svg>
                         </button>
                         <ul class="submenu list-unstyled ps-4 pe-4" id="submenu-servicios">
@@ -118,4 +120,4 @@
     </header>
 
     <main class="position-relative z-0">
-
+        <div id="mobile-menu-overlay"></div>

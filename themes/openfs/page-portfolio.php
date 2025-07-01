@@ -2,7 +2,7 @@
         <!-- HERO SECTION -->
         <section class="hero-page position-relative overflow-hidden text-white">
             <div data-aos="fade-up" data-aos-duration="800" class="hero-page__title position-relative z-1 container">
-                <h2 id="slider-title" class="fs-1 fw-bold text-primary">
+                <h2 id="slider-title" class="fs-1 fw-bold text-white">
                     NUESTRO PORTAFOLIO
                 </h2>
                 <p class="hero-page__description">

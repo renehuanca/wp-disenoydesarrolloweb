@@ -4,16 +4,19 @@ const menuToggle = document.getElementById('menu-toggle');
 const content = document.getElementsByTagName('main')[0];
 const menu = document.getElementById('menu');
 const closeMenuButton = document.getElementById('close-menu-button');
+const overlay = document.getElementById('mobile-menu-overlay');
 
 menuToggle.addEventListener('click', () => {
   menu.classList.add('translate-in');
   menu.classList.remove('translate-end');
+  overlay.classList.add('active');
 });
 
 content.addEventListener('click', () => {
   if (menu.classList.contains('translate-in')) {
     menu.classList.remove('translate-in');
     menu.classList.add('translate-end');
+    overlay.classList.remove('active');
   }
 });
 
@@ -21,6 +24,7 @@ document.querySelectorAll('#menu a').forEach(link => {
   link.addEventListener('click', () => {
     menu.classList.remove('translate-in');
     menu.classList.add('translate-end');
+    overlay.classList.remove('active');
   });
 });
 
@@ -28,17 +32,32 @@ closeMenuButton.addEventListener('click', () => {
   if (menu.classList.contains('translate-in')) {
     menu.classList.remove('translate-in');
     menu.classList.add('translate-end');
+    overlay.classList.remove('active');
   }
-})
+});
 
 // Submenu mobile
 
 const toggleBtn = document.getElementById('toggle-servicios');
 const submenu = document.getElementById('submenu-servicios');
+const plusIcon = document.getElementById('plus-icon');
+const minusIcon = document.getElementById('minus-icon');
+
+minusIcon.style.display = 'none'
 
 toggleBtn.addEventListener('click', () => {
-  submenu.classList.toggle('abierto');
+  const open = submenu.classList.toggle('abierto');
+  if (open) {
+    plusIcon.style.display = 'none'
+    minusIcon.style.display = 'block'
+  } else {
+    plusIcon.style.display = 'block'
+    minusIcon.style.display = 'none'
+  }
 });
+
+// header background when scroll
+
 const header = document.getElementById('header');
 
 function updateHeader() {
@@ -116,4 +135,21 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Accept cookies
 
+const cookiesBanner = document.getElementById('cookies-banner');
+
+if (localStorage.getItem('cookies_accepted')) {
+  cookiesBanner.style.display = 'none';
+  loadScriptWithCookies();
+}
+
+document.getElementById('accept-cookies-button').addEventListener('click', () => {
+  localStorage.setItem('cookies_accepted', true);
+  cookiesBanner.style.display = 'none';
+  loadScriptWithCookies();
+})
+
+function loadScriptWithCookies() {
+  // here you script
+}

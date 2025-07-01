@@ -104,10 +104,27 @@
         LLC</p>
 </footer>
 
+<!-- Button to top -->
 <a id="scroll-to-top" href="#top" class="position-fixed bottom-0 end-0 m-3 text-decoration-none text-white bg-black rounded d-flex align-items-center justify-content-center d-none"
     style="width: 50px; height: 50px;" aria-label="Subir arriba">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="current" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-icon lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
 </a>
+
+<!-- Cookies -->
+<div id="cookies-banner" class="card bg-black position-fixed start-0 bottom-0 m-3 z-1" style="max-width: 350px;">
+    <div class="card-body text-white">
+        <p class="fw-bold">
+            Política de privacidad <br>
+            Cookies y acuerdo con el usuario
+        </p>
+
+        <p style="font-size: .8rem;">
+            Este sitio web utiliza cookies propias y de terceros para elaborar información estadística y poder mostrarle publicidad relacionada con sus preferencias a través del análisis de su navegación.
+        </p>
+        <button class="btn btn-primary" id="accept-cookies-button">Acepto</button>
+    </div>
+</div>
+
 
 <?php wp_footer(); ?>
 
