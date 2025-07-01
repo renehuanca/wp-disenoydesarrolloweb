@@ -39,7 +39,7 @@ $services = new WP_Query([
             </div>
         </div>
     </div>
-    <svg fill="#FFF" class="services-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 91"
+    <svg fill="#FFF" id="diseno-web" class="services-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 91"
         preserveAspectRatio="none">
         <path d="M0 0v.4c67.3 41.8 265.8 72 500.2 72 234 0 432.2-30.2 499.8-71.8V0H0z"></path>
     </svg>

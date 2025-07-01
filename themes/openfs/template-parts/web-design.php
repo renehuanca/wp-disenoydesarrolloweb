@@ -1,5 +1,5 @@
         <!-- DISEÑO DE PAGINAS WEB SECTION -->
-        <section class="diseno py-5" id="diseno-web">
+        <section class="diseno py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 px-3 px-md-0">
